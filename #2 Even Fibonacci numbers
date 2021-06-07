@@ -10,3 +10,5 @@ while b<4000000:
     if num2%num1==0:
         sum += num2
 print(sum)
+
+#Answer: 4613732
