@@ -1,0 +1,18 @@
+#The prime factors of 13195 are 5, 7, 13 and 29.
+#What is the largest prime factor of the number 600851475143 ?
+
+largest = 2
+num = 600851475143
+i = 3
+while i<(num//3):
+    if num%i ==0:
+        num /= i
+        if i>largest:
+            largest = i
+    else:
+        i+=1
+if(num>largest):
+    largest = num
+print(largest)
+
+#Answer: 6857
