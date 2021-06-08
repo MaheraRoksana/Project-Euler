@@ -1,10 +1,10 @@
 #The prime factors of 13195 are 5, 7, 13 and 29.
 #What is the largest prime factor of the number 600851475143 ?
 
-largest = 2
+largest = 2                 #2 is the smallest prime
 num = 600851475143
-i = 3
-while i<(num//3):
+i = 3                       #The number we are checking is odd, so the smallest prime it could have is 3          
+while i<(num//3):           #For efficiency, we are checking primes of the number after it has been divided by 3
     if num%i ==0:
         num /= i
         if i>largest:
